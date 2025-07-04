@@ -54,4 +54,6 @@ TestResult.xml
 nunit-*.xml
 
 .vscode/
+.idea/
 *.csproj
+Folder.DotSettings.user
