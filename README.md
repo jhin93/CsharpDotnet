@@ -1,15 +1,25 @@
-## C# && .NET
+# Cloud-based File Upload, Processing, and Distribution Platform
 
-- 'm'이 있는 경우
-```c#
-Console.WriteLine(12.39826m);
-```
-타입: decimal
-정밀도: 28~29자리의 높은 정밀도를 제공하며, 금융 계산에 적합.
+## Project Structure
 
-- 'm'이 없는 경우
-```c#
-Console.WriteLine(12.39826);
 ```
-타입: double
-정밀도: double은 부동 소수점 타입으로, 약 15~17자리의 유효 자릿수를 가지며, 반올림 오차가 발생할 수 있습니다.
+SP-01/
+│
+├── backend/           # C# .NET Web API (File upload/download, authentication, metadata management)
+├── processor/         # Python (File processing, asynchronous tasks)
+├── frontend/          # React (File upload/management UI)
+├── infra/             # IaC, Docker, deployment scripts, AWS configuration
+├── docs/              # Architecture, ERD, API documentation
+├── .env.example       # Example environment variables
+├── docker-compose.yml # Orchestration for local development
+└── README.md
+```
+
+## Directory Descriptions
+- **backend/**: C# .NET Web API server source and tests
+- **processor/**: Python-based file processing service
+- **frontend/**: React frontend source
+- **infra/**: AWS ECS, Lambda, CloudWatch, and other infrastructure/deployment scripts and configuration
+- **docs/**: Project documentation such as architecture, ERD, and API specs
+- **.env.example**: Example environment variable file
+- **docker-compose.yml**: Orchestration file for local development
