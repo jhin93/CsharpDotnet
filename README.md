@@ -56,3 +56,42 @@ Deploying services with ECS, periodic aggregation/notification with Lambda, moni
 Support for various log sources (web, mobile, IoT, etc.)
 Integrating external notifications such as Slack/email/text messages
 Automatically generating log aggregation/analysis reports
+
+
+
+## MVP
+### 1st priority
+1. Authentication
+User Login/Logout (Membership registration will be postponed until after MVP)
+Auth token management (JWT, etc.)
+
+2. File Upload
+File selection and upload (Drag & Drop, file explorer)
+Upload progress display
+Upload status display (success/failure)
+
+3. File List & Management
+View uploaded file list
+Display status of each file (before/after conversion, error, etc.)
+Delete file
+
+### 2nd priority
+4. File Preview & Download
+Preview images/documents/videos (only available formats)
+Download converted files
+
+5. Notifications & Status
+Major event notifications (Toast, etc.) for upload/conversion/deletion
+Real-time display of conversion status (polling)
+
+### 3rd priority
+6. User Profile (optional)
+My information/Change password
+Manage my file/upload history
+
+7. Responsive UI & UX
+Mobile/desktop responsive
+Accessibility
+
+8. Error Handling
+Handling exceptions such as network/server errors, authentication expiration, etc.
