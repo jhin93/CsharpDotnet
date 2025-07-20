@@ -39,3 +39,17 @@
   font-size: 0.95rem;
   text-align: center;
 }
+
+.logoFixed {
+  position: fixed;
+  top: 24px;
+  left: 32px;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1976d2;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  z-index: 1000;
+  background: transparent;
+  user-select: none;
+}

@@ -17,17 +17,17 @@ const LoginPage = () => {
     if (success) {
       navigate("/");
     } else {
-      setError("로그인 실패");
+      setError("Login failed");
     }
   };
 
   return (
     <form className={styles.container} onSubmit={handleSubmit}>
-      <h2>login</h2>
+      <h2>Login</h2>
       <input
         className={styles.input}
         type="email"
-        placeholder="email"
+        placeholder="Email"
         value={email}
         onChange={e => setEmail(e.target.value)}
         required
@@ -35,13 +35,13 @@ const LoginPage = () => {
       <input
         className={styles.input}
         type="password"
-        placeholder="password"
+        placeholder="Password"
         value={password}
         onChange={e => setPassword(e.target.value)}
         required
       />
       <button className={styles.button} type="submit" disabled={loading}>
-        {loading ? "Login processing..." : "login"}
+        {loading ? "Logging in..." : "Login"}
       </button>
       {error && <div className={styles.error}>{error}</div>}
     </form>
