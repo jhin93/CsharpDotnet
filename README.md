@@ -1,7 +1,7 @@
 # Cloud-based File Upload, Processing, and Distribution Platform
 
 
-## Project name: JekLog (SaaS-type log collection, analysis, and monitoring platform (Mini Datadog/ELK))
+## Project name: LogJack (SaaS-type log collection, analysis, and monitoring platform (Mini Datadog/ELK))
 
 ### Project overview
 A platform that collects, stores, searches, and visualizes logs generated from multiple applications (including sample apps for testing)
