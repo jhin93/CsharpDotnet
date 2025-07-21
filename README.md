@@ -58,6 +58,13 @@ Integrating external notifications such as Slack/email/text messages
 Automatically generating log aggregation/analysis reports
 
 
+## Development Order
+### 1st priority -> 2nd priority -> 3rd priority
+#### Development order for each priority
+1. Infra
+2. Frontend
+3. Backend
+3. Processor
 
 ## MVP
 ### 1st priority
