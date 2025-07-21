@@ -57,3 +57,4 @@ nunit-*.xml
 .idea/
 *.csproj
 Folder.DotSettings.user
+publish/
