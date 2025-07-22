@@ -43,6 +43,25 @@ This project uses the following core AWS services:
 - **.env.example**: Example environment variable file
 - **docker-compose.yml**: Orchestration file for local development
 
+## Architecture Overview
+```
+[User]
+   |
+[ECS: frontend (React)]
+   |
+[ECS: backend (C# .NET)]
+   |
+[Private Subnet] -- [ECS: processor (Python)]
+   |
+[RDS (PostgreSQL)]
+   |
+[S3] (File Storage)
+   |
+[CloudWatch] (log/monitoring)
+   |
+[CodePipeline] (CI/CD)
+```
+
 ## Roles by component
 - **Backend (C# .NET Web API)**:
 API for log collection (REST, gRPC, etc.), user authentication, log search/filtering, notification trigger, DB connection
@@ -71,10 +90,10 @@ Automatically generating log aggregation/analysis reports
 ## Development Order
 ### 1st priority -> 2nd priority -> 3rd priority
 #### Development order for each priority
-1. Infra
-2. Frontend
-3. Backend
+1. Frontend
+2. Backend
 3. Processor
+4. Infra
 
 ## MVP
 ### 1st priority
