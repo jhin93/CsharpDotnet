@@ -30,11 +30,8 @@ This project uses the following core AWS services:
 - **ECS**: Container orchestration and deployment
 - **RDS (PostgreSQL)**: Managed database
 - **S3**: File storage
-- **IAM**: Permissions and authentication management
 - **CloudWatch**: Logging and monitoring
-- **Elastic Load Balancer (ALB)**: Traffic distribution
 - **VPC**: Networking and security
-- **Secrets Manager**: Environment variable and secret management
 - **CodePipeline**: Build, test, and deployment automation
 
 ## Directory Descriptions
