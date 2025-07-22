@@ -24,6 +24,20 @@ SP-01/
 └── README.md
 ```
 
+## Essential AWS Infrastructure Services
+
+This project uses the following core AWS services:
+
+- **ECS (Elastic Container Service)**: Container orchestration and deployment
+- **RDS (Relational Database Service)**: Managed database (PostgreSQL)
+- **S3 (Simple Storage Service)**: File storage
+- **IAM (Identity and Access Management)**: Permissions and authentication management
+- **CloudWatch**: Logging and monitoring
+- **Elastic Load Balancer (ALB)**: Traffic distribution
+- **VPC, Subnet, Security Group**: Networking and security
+- **Secrets Manager or Parameter Store**: Environment variable and secret management
+- **CodePipeline/CodeBuild (CI/CD)**: Build, test, and deployment automation
+
 ## Directory Descriptions
 - **backend/**: C# .NET Web API server source and tests
 - **processor/**: Python-based file processing service
