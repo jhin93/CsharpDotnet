@@ -9,13 +9,13 @@ export class AwsStack extends cdk.Stack {
 
     // Existing VPC ID
     const vpc = Vpc.fromLookup(this, 'ExistingVpc', {
-      vpcId: 'vpc-0033224febff18d42', // SP-01
+      vpcId: 'vpc-068d821394d4a13d9', // SP-01
     });
 
-    // Create an ECS Cluster in the existing VPC
-    const cluster = new Cluster(this, 'MainCluster', {
-      vpc: vpc,
-      clusterName: 'SP-01-Cluster',
+    // Existing ECS Cluster
+    const ecsCluster = Cluster.fromClusterAttributes(this, 'ImportedCluster', {
+      clusterName: 'SP-01-ECS',
+      vpc: vpc, // Use the existing VPC
     });
   }
 }
