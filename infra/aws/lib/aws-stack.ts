@@ -1,16 +1,21 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
+import { Vpc } from 'aws-cdk-lib/aws-ec2';
+import { Cluster } from 'aws-cdk-lib/aws-ecs';
 
 export class AwsStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
+    // Existing VPC ID
+    const vpc = Vpc.fromLookup(this, 'ExistingVpc', {
+      vpcId: 'vpc-0033224febff18d42', // SP-01
+    });
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'AwsQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    // Create an ECS Cluster in the existing VPC
+    const cluster = new Cluster(this, 'MainCluster', {
+      vpc: vpc,
+      clusterName: 'SP-01-Cluster',
+    });
   }
 }

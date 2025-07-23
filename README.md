@@ -28,9 +28,7 @@ SP-01/
 This project uses the following core AWS services:
 
 - **ECS**: Container orchestration and deployment
-- **RDS (PostgreSQL)**: Managed database
 - **S3**: File storage
-- **CloudWatch**: Logging and monitoring
 - **VPC**: Networking and security
 - **CodePipeline**: Build, test, and deployment automation
 
@@ -53,11 +51,7 @@ This project uses the following core AWS services:
    |
 [Private Subnet] -- [ECS: processor (Python)]
    |
-[RDS (PostgreSQL)]
-   |
 [S3] (File Storage)
-   |
-[CloudWatch] (log/monitoring)
    |
 [CodePipeline] (CI/CD)
 ```
