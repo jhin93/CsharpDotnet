@@ -24,7 +24,7 @@ export class PipelineStack extends cdk.Stack {
       repo: 'SP-01',   // Repository name
       branch: 'master',  // Branch name
       output: sourceOutput,
-      connectionArn: 'arn:aws:codestar-connections:ap-southeast-2:221196769151:connection/your-actual-connection-id'
+      connectionArn: 'arn:aws:codeconnections:ap-southeast-2:221196769151:connection/f92e3654-4778-4625-adf1-f0daf31fd30a'
     });
 
     // Build Step
