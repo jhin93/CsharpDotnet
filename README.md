@@ -4,6 +4,7 @@
 
 This centralized platform is engineered to monitor and analyze the performance, status, and logs of multiple applications and services. It delivers real-time alerts, customizable dashboards, and robust event processing capabilities, serving as a critical tool for effective system management.
 
+
 ## Key Features
 
 - **Real-time Metrics Collection and Analysis**: Monitors application and server performance metrics in real time.
@@ -13,6 +14,7 @@ This centralized platform is engineered to monitor and analyze the performance, 
 - **User-customizable Dashboards**: Enables tailored visualization of system data.
 - **Multi-tenant Architecture**: Supports multiple users or organizations within a single instance.
 - **Role-Based Access Control (RBAC)**: Ensures secure access with defined user roles.
+
 
 ## Technology Stack
 
@@ -32,6 +34,7 @@ This centralized platform is engineered to monitor and analyze the performance, 
 - **AWS**: Leverages cloud infrastructure (EKS, RDS, ElastiCache, S3) for scalability.
 - **GitHub Actions**: Automates CI/CD pipelines for streamlined development workflows.
 
+
 ## System Components
 
 ### Backend Services
@@ -49,7 +52,6 @@ This centralized platform is engineered to monitor and analyze the performance, 
 - **Containerized Microservices Architecture**: Ensures modularity and scalability.
 - **Automated CI/CD Pipeline**: Facilitates continuous integration and deployment.
 
-## Development Roadmap
 
 ## Development Roadmap
 
