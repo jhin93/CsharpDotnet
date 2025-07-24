@@ -1,8 +1,8 @@
-# Enterprise Monitoring and Alert System
+# Devigilant
 ***
 
 ## Project Overview
-
+### Enterprise Monitoring and Alert System
 This centralized platform is engineered to monitor and analyze the performance, status, and logs of multiple applications and services, leveraging modern DevOps practices including containerization, orchestration, and automated CI/CD pipelines. It delivers real-time alerts, robust event processing, and scalable infrastructure, serving as a critical tool for efficient system management.
 
 ## Key Features
