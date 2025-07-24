@@ -1,5 +1,5 @@
 # Enterprise Monitoring and Alert System
-
+***
 ## Project Overview
 
 This centralized platform is engineered to monitor and analyze the performance, status, and logs of multiple applications and services. It delivers real-time alerts, customizable dashboards, and robust event processing capabilities, serving as a critical tool for effective system management.
@@ -51,13 +51,32 @@ This centralized platform is engineered to monitor and analyze the performance, 
 
 ## Development Roadmap
 
-1. **Local Development Environment Setup**: Configure using Docker Compose.
-2. **Core Backend Services Implementation**: Develop essential backend functionality.
-3. **Frontend Dashboard Development**: Build user-friendly dashboard interfaces.
-4. **AWS Infrastructure Setup and Deployment**: Establish cloud-based infrastructure.
-5. **CI/CD Pipeline Configuration**: Automate build and deployment processes.
-6. **Testing and Performance Optimization**: Ensure system reliability and efficiency.
-7. **Production-ready Feature Implementation**: Finalize features for production deployment.
+## Development Roadmap
+
+### DevOps Infrastructure
+
+- **Local Development Environment Setup**: Configure using Docker Compose for consistent local development.
+- **AWS Infrastructure Setup and Deployment**: Establish scalable cloud-based infrastructure on AWS.
+- **CI/CD Pipeline Configuration**: Automate build and deployment processes using GitHub Actions.
+
+### Backend Development
+
+- **Core Backend Services Implementation**: Develop essential backend functionality to support system operations.
+- **Data Collection API**: Implement FastAPI-based services for efficient data collection.
+- **Alert and Event Processing**: Develop .NET/C#-based system for robust alert handling and event processing.
+- **Authentication/Authorization Service**: Implement secure access control using .NET/C# for RBAC.
+
+### Frontend Development
+
+- **Dashboard UI Components**: Build dynamic and responsive user interfaces using React.
+- **User Customization Features**: Develop capabilities for personalized dashboard configurations.
+- **Integration with Backend APIs**: Implement seamless connections to backend services for real-time data display.
+
+### Testing and Optimization
+
+- **Testing and Performance Optimization**: Ensure system reliability and efficiency through comprehensive testing.
+- **Production-ready Feature Implementation**: Finalize and validate features for production deployment.
+
 
 ## Installation and Running (Development)
 
@@ -92,3 +111,4 @@ This centralized platform is engineered to monitor and analyze the performance, 
    cd ..
    docker-compose up
    ```
+   
